@@ -1,189 +1,528 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="portfolio.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body class="container-fluid body">
-  
-  <!--nav bar-->
-  <div class="container-fluid ">
-    <header class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 ms-3 link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-1" id="portfolioTitle">My Portfolio</span>
-      </a>
-    
-      <ul class="nav nav-underline">
-        <li class="nav-item me-3"><a href="#about-me" class="nav-link fs-4 active" aria-current="page">About me</a></li>
-        <li class="nav-item me-3"><a href="#skills" class="nav-link fs-4">Skills</a></li>
-        <li class="nav-item me-3"><a href="#projects" class="nav-link fs-4">Projects</a></li>
-        <li class="nav-item me-3"><a href="#Certificates" class="nav-link fs-4">Certificates</a></li>
-        <li class="nav-item me-3"><a href="#contact" class="nav-link fs-4">Contact</a></li>
-      </ul>
-    </header>
-  </div>
-  <!--nav bar-->
-
-  <button id="themeToggleButton" class="btn btn-light">
-    <img class="skills-icons"  id="themeToggleImage" src="./images/dark.png" alt="Toggle Theme" width="40" height="40">
-  </button>
-  
-  
-
-  <!--my photo-->
-  <section class="home py-5 about-me" id="about-me">
-    <div class="container-lg">
-      <div class="row align-items-center justify-content-center min-vw-50%">
-        <div class="col-md-6">
-          <div class="home-img text-center">
-            <img class="profile" src="./images/photo.jpg" alt="profile img">
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadasu Lohith | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">RL</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
-        <div class="col-md-6 order-md-first">
-          <div class="home-text pl-5">
-            <p class="text-muted mb-1 fs-4">Hello I'm</p>
-            <h1 class="name text-uppercase fs-1 fw-bold">Ramadasu Lohith</h1>
-            <p class="mt-4 text-muted fs-4">As a passionate and skilled Front-End Developer, I aim to leverage my expertise in HTML, CSS, JavaScript, and modern front-end frameworks to create engaging, user-friendly, and responsive web applications. With a strong background in web development, including an internship and the creation of a front-end e-commerce website, I am eager to contribute to a dynamic team and help build innovative digital solutions that enhance user experiences.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--end-->
+    </nav>
 
-  <!--Skills starts-->
-  <div class="container-fluid px-4 py-5" id="skills">
-    <div class="color"><h2 class="pb-2 border-bottom fs-1 fw-bold text-uppercase text mar">Skills</h2></div>
-  
-    <div class="row g-4 py-5">
-      <div class="col-12 d-flex align-items-start">
-        <div class="d-flex flex-column flex-md-row align-items-start w-100">
-          <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/html.png" alt="html" style="flex-shrink: 0;">
-          <div class="flex-grow-1">
-            <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">HTML</h3>
-            <p class="fs-4 text-muted">HTML (HyperText Markup Language) is the standard language for creating web pages. It structures content using elements like headings, paragraphs, links, and images. HTML forms the backbone of web development and works alongside CSS and JavaScript to build interactive and styled web experiences.</p>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Ramadasu Lohith</span>
+                        <span class="role">Software Engineer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate about creating innovative solutions and building scalable applications. 
+                        I specialize in full-stack development with expertise in modern web technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/Lohith1809" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ramadasu-lohith7-7603892a8" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ramadasulohith7@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./images/photo.jpg" alt="Ramadasu Lohith" class="profile-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
-      </div>
-  
-      <div class="col-12 d-flex align-items-start">
-        <div class="d-flex flex-column flex-md-row align-items-start w-100">
-          <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/css.png" alt="css" style="flex-shrink: 0;">
-          <div class="flex-grow-1">
-            <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">CSS</h3>
-            <p class="fs-4 text-muted">CSS (Cascading Style Sheets) is a language used to control the presentation and layout of web pages. It allows developers to apply styles such as colors, fonts, and spacing to HTML elements. CSS enhances the visual appeal and user experience of a website by separating content from design and enabling responsive layouts across different devices.</p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 d-flex align-items-start">
-        <div class="d-flex flex-column flex-md-row align-items-start w-100">
-          <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/js.png" alt="javascript" style="flex-shrink: 0;">
-          <div class="flex-grow-1">
-            <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">JavaScript</h3>
-            <p class="fs-4 text-muted">JavaScript is a versatile programming language used to create dynamic and interactive web content. It enables developers to manipulate HTML and CSS, handle events, and build complex features like animations, forms, and real-time updates. JavaScript is essential for enhancing user experience and is widely used in conjunction with HTML and CSS to build modern web applications.</p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-12 d-flex align-items-start">
-        <div class="d-flex flex-column flex-md-row align-items-start w-100">
-          <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/java.png" alt="java" style="flex-shrink: 0;">
-          <div class="flex-grow-1">
-            <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">Java</h3>
-            <p class="fs-4 text-muted">Java is a high-level, versatile programming language known for its portability across platforms. It follows the "write once, run anywhere" principle, meaning code written in Java can run on any device with a Java Virtual Machine (JVM). Java is widely used for building robust applications, from web and mobile apps to enterprise-level systems, thanks to its strong performance, security features, and extensive libraries.</p>
-          </div>
-        </div>
-      </div>
+    </section>
 
-      <div class="col-12 d-flex align-items-start">
-        <div class="d-flex flex-column flex-md-row align-items-start w-100">
-          <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/bootstrap.jpeg" alt="bootstrap" style="flex-shrink: 0;">
-          <div class="flex-grow-1">
-            <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">Bootstrap</h3>
-            <p class="fs-4 text-muted">Bootstrap is a popular open-source framework for developing responsive and mobile-first web applications. It provides a collection of pre-designed HTML, CSS, and JavaScript components, such as navigation bars, buttons, and forms, that help streamline the design process. Bootstrap's grid system and utility classes make it easy to create flexible and visually appealing layouts that adapt to different screen sizes.</p>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a dedicated Software Engineer with a passion for creating efficient, scalable, and user-friendly applications. 
+                        My journey in software development has equipped me with a strong foundation in both front-end and back-end technologies.
+                    </p>
+                    <p class="about-description">
+                        I thrive in collaborative environments and enjoy tackling complex problems with innovative solutions. 
+                        My goal is to contribute to meaningful projects that make a positive impact while continuously learning and growing in the field.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies Mastered</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills-preview">
+                    <h3>Core Competencies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag">Problem Solving</div>
+                        <div class="skill-tag">Full-Stack Development</div>
+                        <div class="skill-tag">Database Design</div>
+                        <div class="skill-tag">API Development</div>
+                        <div class="skill-tag">Version Control</div>
+                        <div class="skill-tag">Agile Methodology</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!--ends-->
+    </section>
 
-  <!--tools section start-->
-  <div class="container-fluid px-4 py-5" id="skills">
-    <div class="color"><h2 class="pb-2 border-bottom fs-1 fw-bold text-uppercase text mb-5">Tools</h2></div>
-
-    <div class="col-12 d-flex align-items-start">
-      <div class="d-flex flex-column flex-md-row align-items-start w-100">
-        <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/vs.jpeg" alt="bootstrap" style="flex-shrink: 0;">
-        <div class="flex-grow-1">
-          <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">Vs Code</h3>
-          <p class="fs-4 text-muted">Bootstrap is a popular open-source framework for developing responsive and mobile-first web applications. It provides a collection of pre-designed HTML, CSS, and JavaScript components, such as navigation bars, buttons, and forms, that help streamline the design process. Bootstrap's grid system and utility classes make it easy to create flexible and visually appealing layouts that adapt to different screen sizes.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3 class="category-title">Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/html.png" alt="HTML" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">HTML5</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/css.png" alt="CSS" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">CSS3</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/js.png" alt="JavaScript" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">JavaScript</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/bootstrap.jpeg" alt="Bootstrap" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">Bootstrap</span>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Backend & Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/java.png" alt="Java" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">Java</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Add more backend skills here -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-database skill-icon-text"></i>
+                                    <div class="skill-details">
+                                        <span class="skill-name">SQL</span>
+                                        <span class="skill-level">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="category-title">Tools & Technologies</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/vs.jpeg" alt="VS Code" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">VS Code</span>
+                                        <span class="skill-level">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <img src="./images/github.png" alt="Git" class="skill-icon">
+                                    <div class="skill-details">
+                                        <span class="skill-name">Git & GitHub</span>
+                                        <span class="skill-level">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="col-12 d-flex align-items-start">
-      <div class="d-flex flex-column flex-md-row align-items-start w-100">
-        <img class="skills-icons mb-3 mb-md-0 me-md-3" src="./images/github.png" alt="github" style="flex-shrink: 0;">
-        <div class="flex-grow-1">
-          <h3 class="fw-bold mb-0 fs-3 text-body-emphasis">Git-Hub</h3>
-          <p class="fs-4 text-muted">GitHub is a web-based platform that uses Git, a version control system created by Linus Torvalds, to manage and host code repositories. It provides a range of tools and features that enhance collaboration and version control for software development projects.</p>
-          <a href="https://github.com/Lohith1809" class="btn btn-dark btn-lg fs-4" role="button">Visit my GitHub</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 - Male Fashion E-commerce -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./images/malefashion.jpeg" alt="Male Fashion E-commerce">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://lohith1809.github.io/MaleFashion_SourceCode/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Lohith1809" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Male Fashion E-commerce</h3>
+                        <p class="project-description">
+                            A modern, responsive e-commerce platform built with HTML, CSS, and JavaScript. 
+                            Features include product catalog, shopping cart, and responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for additional projects -->
+                <div class="project-card placeholder">
+                    <div class="project-image">
+                        <div class="placeholder-content">
+                            <i class="fas fa-plus"></i>
+                            <p>Add Your Next Project</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Your Next Amazing Project</h3>
+                        <p class="project-description">
+                            This space is ready for your next project. Add your project details, 
+                            images, and links to showcase your growing portfolio.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-image">
+                        <div class="placeholder-content">
+                            <i class="fas fa-plus"></i>
+                            <p>Add Your Project</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Another Great Project</h3>
+                        <p class="project-description">
+                            Space for another project showcase. Replace this with your actual 
+                            project details and make your portfolio shine.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!--ends-->
+    </section>
 
-  <!--Project section start-->
-  <div class="container-fluid px-4 py-5" id="projects">
-    <div class="color"><h2 class="pb-2 border-bottom fs-1 fw-bold text-uppercase text">Project</h2></div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-center mb-4">
-        <div class="card w-75 mt-5"> 
-          <img src="./images/malefashion.jpeg" class="card-img-top" alt="malefashion project">
-          <div class="card-body">
-            <h5 class="card-title">Male Fashion</h5>
-            <p class="card-text">I developed a front-end e-commerce shopping website designed to provide users with a seamless and engaging online shopping experience. The site features a modern and intuitive interface, showcasing products with detailed descriptions, high-quality images, and easy navigation. Utilizing HTML, CSS, and JavaScript, I implemented responsive design techniques to ensure the site is fully accessible across various devices and screen sizes. The website includes essential e-commerce functionalities such as product listings, search and filter options, and a user-friendly shopping cart, all aimed at enhancing the overall shopping experience. This project demonstrates my ability to create visually appealing and functional web applications tailored to meet the needs of online shoppers.</p>
-            <a href="https://lohith1809.github.io/MaleFashion_SourceCode/" class="btn btn-outline-success btn-lg">Preview</a>
-          </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Achievements</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="experience-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Software Development Intern</h3>
+                            <span class="timeline-company">CodeBeat</span>
+                            <span class="timeline-date">2023 - 2024</span>
+                            <p class="timeline-description">
+                                Gained hands-on experience in software development, working on real-world projects 
+                                and collaborating with experienced developers. Enhanced skills in web development 
+                                and learned industry best practices.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Placeholder for additional experience -->
+                    <div class="timeline-item placeholder">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Your Next Role</h3>
+                            <span class="timeline-company">Company Name</span>
+                            <span class="timeline-date">Year - Year</span>
+                            <p class="timeline-description">
+                                Add your next professional experience here. This could be a full-time position, 
+                                freelance work, or another internship.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certificates">
+                    <h3 class="certificates-title">Certifications</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate-item">
+                            <div class="certificate-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>CodeBeat Internship</h4>
+                                <p>Software Development Internship Certificate</p>
+                                <a href="internshipCertificate.pdf" target="_blank" class="certificate-link">
+                                    View Certificate <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="certificate-item">
+                            <div class="certificate-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>Coursera Certification</h4>
+                                <p>Professional Development Course</p>
+                                <a href="https://www.coursera.org/account/accomplishments/verify/LKBRQGQZGHPN" target="_blank" class="certificate-link">
+                                    View Certificate <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Placeholder for additional certificates -->
+                        <div class="certificate-item placeholder">
+                            <div class="certificate-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="certificate-content">
+                                <h4>Add Your Certificate</h4>
+                                <p>Space for your next certification</p>
+                                <span class="certificate-link">
+                                    Add Link Here
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!--ends-->
+    </section>
 
-  <!--certificates section starts-->
-  <div class="container-fluid px-4 py-5" id="Certificates">
-    <div class="color"><h2 class="pb-2 border-bottom fs-1 fw-bold text-uppercase text">Certificates</h2></div>
-   <div class="d-flex flex-column align-items-center">
-    <a href="internshipCertificate.pdf" class="btn btn-outline-success btn-lg mb-3 mt-5">Internship at CodeBeat</a>
-    <a href="https://www.coursera.org/account/accomplishments/verify/LKBRQGQZGHPN" class="btn btn-outline-success btn-lg">Certificate 1</a>
-   </div>
-  </div>
-  <!--ends-->
-
-  <div class="container-fluid px-4 py-5" id="contact">
-    <div class="color">
-        <h2 class="pb-2 border-bottom fs-1 fw-bold text-uppercase text mb-5">Contact Me</h2>
-    </div>
-    <div class="d-flex flex-column align-items-center">
-        <div class="d-flex gap-4">
-            <a href="#about-me" class="nav-link px-2 text-body-secondary fs-4 text-muted">Home</a>
-            <a href="tel:+919441617482" class="nav-link px-2 text-body-secondary fs-4 text-muted">Phone: +91 94416 17482</a>
-            <a href="mailto:ramadasulohith7@gmail.com" class="nav-link px-2 text-body-secondary fs-4 text-muted">Email: ramadasulohith7@gmail.com</a>
-            <a href="https://www.linkedin.com/in/ramadasu-lohith7-7603892a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="nav-link px-2 text-body-secondary fs-4 text-muted">
-                <img class="skills-icons" src="./images/linkedin.png" alt="LinkedIn" width="40" height="40">LinkedIn</a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Get in touch for opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:ramadasulohith7@gmail.com">ramadasulohith7@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+919441617482">+91 94416 17482</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/ramadasu-lohith7-7603892a8" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Lohith1809" target="_blank">View my repositories</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Ramadasu Lohith. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/Lohith1809" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ramadasu-lohith7-7603892a8" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ramadasulohith7@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjv" ></script>
-  <script src="portfolio.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
